@@ -23,8 +23,7 @@
 - &e: Amarillo
 - &6: Naranja
 
-##Como Usarlo
-
+## Como Usarlo
 
 https://github.com/user-attachments/assets/f1c57f4d-b0cf-453d-b7b9-4c26bd30f83b
 
