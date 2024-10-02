@@ -1,0 +1,6 @@
+name: ElevatorHCF
+version: 1.0.0
+main: pOkKeR\Main
+api: 5.0.0
+author: ! pOkKeR
+description: A plugin to create elevators using signs.
