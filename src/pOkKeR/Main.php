@@ -3,16 +3,23 @@
 namespace pOkKeR;
 
 use pocketmine\plugin\PluginBase;
-use pocketmine\plugin\PluginManager;
 
 class Main extends PluginBase {
 
     protected function onEnable(): void {
-        $this->getLogger()->info("enabled!");
+        // Cargar o generar config.yml si no existe
+        $this->saveDefaultConfig();
+        
+        // Registrar eventos
+        $this->getLogger()->info("Plugin enabled!");
         $this->getServer()->getPluginManager()->registerEvents(new events\EventListener($this), $this);
     }
 
     protected function onDisable(): void {
-        $this->getLogger()->info("disabled!");
+        $this->getLogger()->info("Plugin disabled!");
+    }
+    
+    public function getConfig(): \pocketmine\utils\Config {
+        return parent::getConfig();
     }
 }
